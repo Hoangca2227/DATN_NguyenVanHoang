@@ -30,39 +30,4 @@ D2 --> F[Hiển thị biểu cảm tương ứng]
 | Phân tích biểu cảm   | **CNN** (`TensorFlow/Keras`)  | Dự đoán biểu cảm từ ảnh khuôn mặt đã chuẩn hóa.          |
 | Giao diện demo       | **OpenCV**                    | Hiển thị kết quả theo thời gian thực.                    |
 
-🚀 Cách chạy chương trình
-1️⃣ Cài đặt môi trường
-pip install -r requirements.txt
 
-2️⃣ Huấn luyện hoặc tải mô hình sẵn có
-
-
-Chạy facenet.ipynb để huấn luyện mô hình nhận diện khuôn mặt.
-
-Chạy emotion_detion.ipynb để huấn luyện mô hình phân tích biểu cảm.
-
-3️⃣ Chạy demo nhận diện & phân tích biểu cảm
-python main.py
-
-
-👉 Hệ thống sẽ bật webcam và hiển thị:
-
-Tên người dùng nhận diện được.
-
-Biểu cảm khuôn mặt dự đoán theo thời gian thực.
-
-🧪 Kết quả đạt được
-
-Độ chính xác nhận diện khuôn mặt (FaceNet + SVM): ~98% trên tập thử nghiệm.
-
-Độ chính xác phân tích biểu cảm (CNN): ~90% trên tập dữ liệu FER2013.
-
-Chạy ổn định real-time (≈25 FPS) với webcam laptop.
-
-💡 Hướng phát triển
-
-Tối ưu tốc độ xử lý bằng TensorRT hoặc ONNX Runtime.
-
-Tích hợp với hệ thống điểm danh, giám sát an ninh, hoặc chatbot cảm xúc.
-
-Phát triển giao diện web với Django hoặc Streamlit.
