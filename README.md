@@ -27,11 +27,5 @@ D2 --> F[Hiển thị biểu cảm tương ứng]
 
 
 
-| Thành phần           | Mô hình / Thư viện            | Mô tả                                                    |
-| -------------------- | ----------------------------- | -------------------------------------------------------- |
-| Phát hiện khuôn mặt  | **MTCNN** (`mtcnn`)           | Xác định vị trí khuôn mặt và landmark (mắt, mũi, miệng). |
-| Trích xuất đặc trưng | **FaceNet** (`keras-facenet`) | Tạo vector đặc trưng 512 chiều cho mỗi khuôn mặt.        |
-| Nhận diện danh tính  | **SVM** (`scikit-learn`)      | Phân loại khuôn mặt dựa trên vector embedding.           |
-| Phân tích biểu cảm   | **CNN** (`TensorFlow/Keras`)  | Dự đoán biểu cảm từ ảnh khuôn mặt đã chuẩn hóa.          |
-| Giao diện demo       | **OpenCV**                    | Hiển thị kết quả theo thời gian thực.                    |
+
 
