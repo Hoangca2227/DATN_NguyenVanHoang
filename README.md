@@ -8,7 +8,9 @@ Hệ thống kết hợp nhiều mô hình học sâu để xử lý các bướ
 - **FaceNet** – trích xuất đặc trưng (embedding) 512 chiều đại diện cho từng khuôn mặt.
 - **SVM (Support Vector Machine)** – phân loại danh tính khuôn mặt dựa trên vector đặc trưng từ FaceNet.
 - **CNN (Convolutional Neural Network)** – phân tích và xác định **biểu cảm khuôn mặt** (ví dụ: vui, buồn, giận, ngạc nhiên, sợ hãi, ghê tởm, bình thường).
-
+## 🏷️ Keywords
+FaceNet, MTCNN, SVM, CNN, Face Recognition, Facial Expression, Artificial Intelligence
+FaceNet, MTCNN, SVM, CNN, nhận diện khuôn mặt, phân tích biểu cảm, trí tuệ nhân tạo, thị giác máy tính.
 ---
 
 ## ⚙️ Kiến trúc hệ thống
@@ -21,6 +23,7 @@ C --> D1[SVM: Nhận diện danh tính]
 C --> D2[CNN: Phân tích biểu cảm]
 D1 --> E[Hiển thị tên và ID khuôn mặt]
 D2 --> F[Hiển thị biểu cảm tương ứng]
+
 
 
 
