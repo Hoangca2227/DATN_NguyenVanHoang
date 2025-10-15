@@ -1,10 +1,24 @@
-# Emotion_detection
-This project aims to develop a system for accurately recognizing facial expressions from images or video. The project leverages machine learning techniques, particularly Convolutional Neural Networks (CNNs), to classify seven facial expressions: angry, happy, fear, surprise, disgust, sad, and neutral. It utilizes the FER-2013 dataset, which contains approximately 35,000 images. These images are preprocessed and normalized to improve model accuracy. 
+# 🎭 Phát triển hệ thống nhận diện và phân tích biểu cảm khuôn mặt dựa trên mô hình FaceNet
 
-This project explores different models, including LeNet, ResNet, and VGG, finding that CNNs deliver the most consistent performance. A real-time demo application is also created using OpenCV, allowing users to predict facial expressions via a webcam feed. This project demonstrates skills in deep learning, image processing, and real-time application development, with potential applications in customer service, security, healthcare, and human-computer interaction.
+## 🧠 Giới thiệu
+Đề tài tập trung xây dựng **hệ thống nhận diện khuôn mặt và phân tích biểu cảm cảm xúc** của con người trong thời gian thực.  
+Hệ thống kết hợp nhiều mô hình học sâu để xử lý các bước khác nhau trong pipeline nhận diện khuôn mặt:
 
-To run this project, you need to:
-- Dowload the dataset from Kaggle.
-- Dowload CNN model and haarcascade classifier.
-- Set up the environment.
-- Run file main.py and see the result.
+- **MTCNN (Multi-task Cascaded Convolutional Networks)** – phát hiện và cắt khuôn mặt từ ảnh/video.
+- **FaceNet** – trích xuất đặc trưng (embedding) 512 chiều đại diện cho từng khuôn mặt.
+- **SVM (Support Vector Machine)** – phân loại danh tính khuôn mặt dựa trên vector đặc trưng từ FaceNet.
+- **CNN (Convolutional Neural Network)** – phân tích và xác định **biểu cảm khuôn mặt** (ví dụ: vui, buồn, giận, ngạc nhiên, sợ hãi, ghê tởm, bình thường).
+
+---
+
+## ⚙️ Kiến trúc hệ thống
+
+```mermaid
+graph TD
+A[Input: Ảnh/Video] --> B[MTCNN: Phát hiện khuôn mặt]
+B --> C[FaceNet: Trích xuất đặc trưng khuôn mặt]
+C --> D1[SVM: Nhận diện danh tính]
+C --> D2[CNN: Phân tích biểu cảm]
+D1 --> E[Hiển thị tên và ID khuôn mặt]
+D2 --> F[Hiển thị biểu cảm tương ứng]
+
